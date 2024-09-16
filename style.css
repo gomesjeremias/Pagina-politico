@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+
+body {
+
+    background: #092e57;
+
+}
+
+.menu {
+
+    width: 100%;
+    height: 50px;
+    background-color: rgba(250, 250, 34, 0.911);
+}
+
+
+
+.logo {
+
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 30px;
+
+}
+
+.logo-image {
+
+    display: inline-block;
+    margin-left: 0;
+}
+
+a {
+
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display:inline-block;
+    position: relative;left: 1500px; bottom: 10px;
+}
+
+a:hover {
+    color: #127de9;
+
+}
+
+.section-01 {
+
+    box-sizing:border-box;
+    width: 100%;
+    height: 20%;
+
+
+
+.imagem-fundo {
+
+    width: 100%;
+}
+
+img {
+
+    width: 100%;
+}
+
+.fundo-azul {
+
+    width: 100%;
+    background:#104274 ;
+    clip-path: polygon(100% -1%, 0 -1%, 50% 187%);
+    
+}
+
+.foto-politico {
+    width: 900px;
+    background: none;
+    position:relative;top: -948px;
+   
+}
+
+@media screen {
+    max-width: 390px
+.section-01 {
+    max-width: 100px;
+}
+}
