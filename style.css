@@ -223,6 +223,12 @@ a:hover {
         visibility: visible;
         z-index: 10;
     }
+
+    .contato {
+
+        text-decoration: none;
+        color: black;
+    }
     
 
    
