@@ -8,21 +8,24 @@
 
 body {
     width: 100%;
-    height: 756px;
+    height: 50vh;
     background: #092e57;
+    display: flexbox;
 
 }
 
 .caixa-mae {
     width: 100%;
-    height: 300px;
+    height: 50vh;
+    display: flexbox;
 }
 
 .menu {
 
     width: 100%;
-    height: 50px;
+    height: 8vh;
     background-color: rgba(250, 250, 34, 0.911);
+    display: flexbox;
 }
 
 
@@ -39,6 +42,7 @@ body {
 
     display: inline-block;
     margin-left: 0;
+    display: flexbox;
 }
 
 a {
@@ -54,35 +58,39 @@ a {
 }
 
 .foto-politico {
-    width:auto;
+    width:50vw;
     height:auto;
     background: none;
-    display: flex;
-    position:relative; top: -950px;
-    margin-bottom: 50px;
+    display:flexbox;
+    position:absolute;
+    margin-top: 108px;
 
 }
 
 .logos-numero {
 
-    width: 603px;
+    width: 50vw;
+    height:auto;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 778px;
-    top: 252px;
+    align-items: flex-end;
+    position:static;
+    margin-top:px;
+    margin-left: 280px;
+    
 }
 
 .logo-amarela {
 
-    width: 600px;
-    margin-left: -104px;
+    width: 30vw;
+    display: flex;
+    margin-top: 70px;
 }
 
 .logo-numero {
 
-    width: 603px;
-    margin-top: 261px;
+    width: 50vh;
+    margin-top: 50px;
     border-radius: ;
     
 }
@@ -96,14 +104,18 @@ a:hover {
 
     box-sizing: border-box;
     width: 100%;
-    height:750px
+    display: grid;
+    height:75px
 }
 
 
-    .imagem-fundo {
+    .img-fundo {
 
         width: 100%;
-        background: #104274;
+        height: 157vh;
+        z-index: -12;
+        margin-top: -1000px;
+    
         clip-path: polygon(100% -1%, 0 -1%, 50% 235%);
     }
 
@@ -184,6 +196,7 @@ a:hover {
         background-color: #000;
         bottom: 10px;
         cursor: pointer;
+        display: flex;
         display: block;
         height: 15px;
         position:relative;
@@ -229,6 +242,26 @@ a:hover {
         text-decoration: none;
         color: black;
     }
+    
+    @media (max-width: 744px) {
+        .logos-numero {
+            max-width: 25%;
+            
+        }
+        .logo-numero {
+            width: 100px;
+        }
+        
+        .foto-politico {
+            margin-top: 20px;
+        }
+
+        .img-fundo {
+            width: 80%;
+            clip-path: polygon(100% -1%, 0 -1%, 60% 300%);
+        }
+      }
+
     
 
    
